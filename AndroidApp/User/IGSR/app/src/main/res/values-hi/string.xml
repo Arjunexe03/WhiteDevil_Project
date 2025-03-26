@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="follow_system">सिस्टम</string>
+    <string name="on">चालू</string>
+    <string name="off">बंद</string>
+    <string name="unknown_error_title">उफ़! कुछ गलत हो गया</string>
+    <string name="copy_and_exit">कापी करें और बाहर निकलें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="dismiss">रद्द करें</string>
+    <string name="yt_dlp_docs">Yt-dlp उपयोग संदर्भ</string>
+    <string name="remove">हटाएं</string>
+    <string name="got_it">समझ गया</string>
+    <string name="how_does_it_work">यह कैसे काम करता है\?</string>
+    <string name="open_settings">समायोजन खोलें</string>
+    <string name="language">भाषा प्रदर्शित करें</string>
+    <string name="language_settings">प्रदर्शन भाषा सेट करें</string>
+    <string name="suggested">सुझावित</string>
+    <string name="all_languages">सभी भाषाएँ</string>
+    <string name="system_settings">सिस्टम सेटिंग्स</string>
+    <string name="display">दिखाएँ</string>
+    <string name="display_settings">डार्क थीम, गतिशील रंग, भाषाएं</string>
+    <string name="dynamic_color">गतिशील रंग</string>
+    <string name="dynamic_color_desc">वॉलपेपर से ऐप थीम पर रंग लागू करें</string>
+    <string name="dark_theme">डार्क थीम</string>
+    <string name="look_and_feel"><![CDATA[दिखावट और अनुभव]]></string>
+    <string name="about">हमारे बारे में</string>
+    <string name="about_page">संस्करण, प्रतिक्रिया</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="credits">क्रेडिट</string>
+    <string name="credits_desc">क्रेडिट और लिब्रे सॉफ्टवेयर</string>
+    <string name="home">होम</string>
+    <string name="report">रिपोर्ट</string>
+    <string name="open_source_licenses">ओपन सोर्स लाइसेंस</string>
+    <string name="additional_settings">अतिरिक्त सेटिंग्स</string>
+    <string name="high_contrast">उच्च कंट्रास्ट डार्क थीम</string>
+    <string name="back">वापस</string>
+    <string name="clear">साफ करें</string>
+    <string name="paste">पेस्ट करें</string>
+    <string name="add">जोड़ें</string>
+    <string name="show_navigation_drawer">नेविगेशन ड्रावर दिखाएं</string>
+    <string name="problem">समस्या</string>
+    <string name="address">पता</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="name">नाम</string>
+
+</resources>

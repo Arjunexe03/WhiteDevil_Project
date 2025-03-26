@@ -11,15 +11,9 @@ import android.net.ConnectivityManager
 import android.os.Build
 import androidx.core.content.getSystemService
 import com.google.android.material.color.DynamicColors
-import org.whitedevil.igrs.util.PreferenceUtil.getString
-import org.whitedevil.igrs.util.UpdateUtil
-import org.whitedevil.igrs.util.YT_DLP_VERSION
 import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class App : Application() {
     override fun onCreate() {
@@ -38,14 +32,6 @@ class App : Application() {
 
         clipboard = getSystemService()!!
         connectivityManager = getSystemService()!!
-
-        applicationScope.launch((Dispatchers.IO)) {
-            try {
-                UpdateUtil.deleteOutdatedApk()
-            } catch (th: Throwable) {
-                withContext(Dispatchers.Main) { startCrashReportActivity(th) }
-            }
-        }
 
         Thread.setDefaultUncaughtExceptionHandler { _, e -> startCrashReportActivity(e) }
     }

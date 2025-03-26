@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "802763677183",
+    "firebase_url": "https://igsr-white-devil-default-rtdb.firebaseio.com",
+    "project_id": "igsr-white-devil",
+    "storage_bucket": "igsr-white-devil.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802763677183:android:e97b176bda470798545bca",
+        "android_client_info": {
+          "package_name": "org.whitedevil.igrs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfEi6AmgLg2rdqsYDVqZEqBcz5Mqw8mJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

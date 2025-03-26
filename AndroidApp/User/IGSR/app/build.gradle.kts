@@ -53,14 +53,16 @@ android {
             isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
+            if (keystorePropertiesFile.exists()) {
+                signingConfig = signingConfigs.getByName("githubPublish")
+            }
         }
         debug {
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "progaurd-rules.pro"
-            )
+            if (keystorePropertiesFile.exists()) {
+                signingConfig = signingConfigs.getByName("githubPublish")
+            }
         }
     }
 
@@ -110,6 +112,9 @@ dependencies {
     implementation(libs.okhttp)
 
     implementation(libs.mmkv)
+
+    implementation(platform(libs.firebaseBom))
+    implementation(libs.firebase.database)
 
     testImplementation(libs.junit4)
     androidTestImplementation(libs.androidx.test.ext)

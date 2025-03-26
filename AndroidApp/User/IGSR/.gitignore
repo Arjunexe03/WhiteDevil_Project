@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+/signature
+keystore.properties

@@ -6,6 +6,7 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.google.android.material.color.DynamicColors
+import org.whitedevil.igrs.R
 import org.whitedevil.igrs.App
 import org.whitedevil.igrs.App.Companion.applicationScope
 import org.whitedevil.igrs.App.Companion.isDebugBuild

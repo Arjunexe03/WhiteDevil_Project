@@ -1,47 +1,54 @@
 package org.whitedevil.igrs
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import org.whitedevil.igrs.App.Companion.context
+import org.whitedevil.igrs.ui.common.LocalDarkTheme
+import org.whitedevil.igrs.ui.common.SettingsProvider
+import org.whitedevil.igrs.util.PreferenceUtil
+import org.whitedevil.igrs.util.setLanguage
+import kotlinx.coroutines.runBlocking
+import org.whitedevil.igrs.ui.page.AppEntry
 import org.whitedevil.igrs.ui.theme.IGSRTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
+
+        if (Build.VERSION.SDK_INT < 33) {
+            runBlocking { setLanguage(PreferenceUtil.getLocaleFromPreference()) }
+        }
         enableEdgeToEdge()
+
+        context = this.baseContext
         setContent {
-            IGSRTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            val windowSizeClass = calculateWindowSizeClass(this)
+            SettingsProvider(windowWidthSizeClass = windowSizeClass.widthSizeClass) {
+                IGSRTheme(
+                    darkTheme = LocalDarkTheme.current.isDarkTheme(),
+                    isHighContrastModeEnabled = LocalDarkTheme.current.isHighContrastModeEnabled,
+                ) {
+                    AppEntry()
                 }
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    IGSRTheme {
-        Greeting("Android")
+    companion object {
+        private const val TAG = "MainActivity"
     }
 }

@@ -31,6 +31,7 @@ mmkv = "2.1.0"
 
 ktfmt = "0.20.1"
 googleServices = "4.4.2"
+firebaseBOM = "33.11.0"
 
 [libraries]
 
@@ -85,6 +86,9 @@ junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 
 mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkv" }
+
+firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBOM" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
