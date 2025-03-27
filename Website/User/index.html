@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IGSR - Integrated grievance redressal system</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/config/favicon.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/config/favicon.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/config/favicon.jpg" />
+
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="resources/config/favicon.jpg" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    
+    <meta name="title" content="IGSR - Integrated grievance redressal system" />
+    <meta name="description"
+        content="An AI-powered solution for Uttar Pradesh IGRS to analyze and visualize grievances, enhancing decision-making and improving redressal efficiency." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <header id="home">
+        <nav>
+            <div class="navbar-logo">
+                <a href="#" class="logo">IGSR</a>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/report.html">Report</a></li>
+                </ul>
+            </div>
+            <div id="mobileNav">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="myNav" class="mobileNavOverlay">
+                <div class="overlay-content">
+                    <a href="javascript:void()" class="close-btn" onclick="closeNav()">&times;</a>
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#report" onclick="closeNav()">Report</a>
+                </div>
+            </div>
+        </nav>
+        <div id="hero">
+            <div class="row">
+                <div class="col span_1_of_2">
+                    <div class="hero-description">
+                        <h1>
+                            Simple, fast <br />
+                            Solution.
+                        </h1>
+                        <p>
+                            With <span class="bold-text">IGSR</span>, you can fast,
+                            simply, secure way to report your problem!
+                        </p>
+
+                        <a href="#download" class="btn"><span class="download-btn"> Report problem</span></a>
+                    </div>
+                </div>
+                <div class="col span_1_of_2">
+                    <img class="hero-img" src="images/detail_3.png" />
+                </div>
+            </div>
+        </div>
+        <div class=" shape-divider">
+            <div class="custom-shape-divider-bottom-1603385849">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="scrollUp" title="Go to top">
+            <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+            </svg>
+        </button>
+    </header>
+    
+
+    <section id="features">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <div class="features-images">
+                    <img class="features_1" src="images/project.png" alt="" />
+                </div>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="section-description features-description col1">
+                    <h2 class="stylish_heading">
+                        Report your problem <span class="red_dot">.</span>
+                    </h2>
+                    <p class="little-description">Citizens can easily submit their grievances through the system by providing necessary details about their issues.
+                        The AI-powered platform ensures seamless data collection and verifies the completeness of the information.
+                        This step helps in gathering structured complaints, making it easier for authorities to process them efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row second-features-row">
+            <div class="col span_1_of_2">
+                <div class="section-description features-description">
+                    <h2 class="stylish_heading">
+                        Categorises your problem <span class="red_dot">.</span>
+                    </h2>
+                    <p class="little-description">
+                        Once a complaint is submitted, the AI analyzes the grievance and categorizes it into predefined sectors such as infrastructure, public services, or law enforcement.
+                        This automated classification helps authorities quickly identify common patterns, prioritize urgent cases, and allocate resources effectively for faster resolution.
+                    </p>
+                </div>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="features-images">
+                    <img class="features_3" src="images/detail.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <div class="features-images">
+                    <img class="features_1" src="images/theme.png" alt="" />
+                </div>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="section-description features-description col1">
+                    <h2 class="stylish_heading">
+                        Find/Fix Solution <span class="red_dot">.</span>
+                    </h2>
+                    <p class="little-description">
+                        After categorization, the system suggests possible solutions based on past cases and assigns complaints to the relevant department for action.
+                        Users can track the status of their grievances in real time, while authorities get insights to improve redressal mechanisms.
+                        This step ensures a data-driven, efficient, and transparent resolution process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="row">
+            <img class="app-logo" src="images/desk.png" alt="" />
+            <h2 class="stylish_heading">
+                Download the app <span class="red_dot">.</span>
+            </h2>
+            <p class="">
+                For native support of this platform we have a Android App.
+            </p>
+
+            <a href="https://github.com/Arjunexe03/WhiteDevil_Project/releases" class="btn-l"><span class="download-btn-l"> Download</span></a>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Main JS Files -->
+    <script src="script/essention.js"></script>
+    <script src="script/jquery.nice-select.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
