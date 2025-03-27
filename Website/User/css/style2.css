@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
 
-/* Reset styles and set default font */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +7,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* Body styles for centering content and background setup */
 body {
   display: flex;
   align-items: center;
@@ -19,7 +16,7 @@ body {
   padding: 0 10px;
 }
 
-/* Background overlay for body */
+
 body::before {
   content: "";
   position: absolute;
@@ -30,7 +27,7 @@ body::before {
   background-size: cover;
 }
 
-/* Glassmorphism style for form wrapper */
+
 .wrapper {
   width: 400px;
   border-radius: 8px;
@@ -41,27 +38,27 @@ body::before {
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Form layout as a vertical column */
+
 form {
   display: flex;
   flex-direction: column;
 }
 
-/* Header style for form title */
+
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
 }
 
-/* Style for input field container */
+
 .input-field {
   position: relative;
   border-bottom: 2px solid #ccc;
   margin: 15px 0;
 }
 
-/* Label styling, with animation for floating effect */
+
 .input-field label {
   position: absolute;
   top: 50%;
@@ -73,7 +70,7 @@ h2 {
   transition: 0.15s ease;
 }
 
-/* Input styling for text and password fields */
+
 .input-field input {
   width: 100%;
   height: 40px;
@@ -84,7 +81,7 @@ h2 {
   color: #fff;
 }
 
-/* Label animation when input is active or filled */
+
 .input-field input:focus~label,
 .input-field input:valid~label {
   font-size: 0.8rem;
@@ -92,7 +89,7 @@ h2 {
   transform: translateY(-120%);
 }
 
-/* Section for "Remember me" and "Forgot password" */
+
 .forget {
   display: flex;
   align-items: center;
@@ -101,34 +98,34 @@ h2 {
   color: #fff;
 }
 
-/* Checkbox styling */
+
 #remember {
   accent-color: #fff;
 }
 
-/* Label styling within "Remember me" section */
+
 .forget label {
   display: flex;
   align-items: center;
 }
 
-/* Margin adjustment for "Remember me" text */
+
 .forget label p {
   margin-left: 8px;
 }
 
-/* Link styling for "Forgot password" and registration link */
+
 .wrapper a {
   color: #efefef;
   text-decoration: none;
 }
 
-/* Hover effect for links */
+
 .wrapper a:hover {
   text-decoration: underline;
 }
 
-/* Button styling for submit action */
+
 button {
   background: #fff;
   color: #000;
@@ -142,14 +139,14 @@ button {
   transition: 0.3s ease;
 }
 
-/* Hover effect for button */
+
 button:hover {
   color: #fff;
   border-color: #fff;
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Registration link section styling */
+
 .register {
   text-align: center;
   margin-top: 30px;

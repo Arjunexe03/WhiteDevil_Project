@@ -1,4 +1,4 @@
-/* Nice Select CSS */
+
 .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: #f8f8f8;
@@ -189,7 +189,7 @@
     display: block;
 }
 
-/* CSS Global Rules */
+
 * {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
@@ -249,7 +249,7 @@ section {
     color: #808080;
 }
 
-/* Preloader */
+
 .preloader {
     background-color: #ffffff;
     position: fixed;
@@ -307,11 +307,7 @@ section {
     }
 }
 
-/* End: Preloader */
 
-/* End: CSS Global Rules */
-
-/* Reusable Components */
 .bold-text {
     font-weight: 700;
 }
@@ -337,7 +333,7 @@ section {
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
-    /* box-shadow: 10px 0 40px rgba(0, 0, 0, 0.15); */
+    
     display: inline-block;
     cursor: pointer;
     -webkit-filter: drop-shadow(0 10px 30px rgba(5, 150, 217, 0.3));
@@ -379,28 +375,19 @@ section {
     margin: auto;
 }
 
-/* End: Reusable Components */
 
-/* Main CSS Rules */
-
-/* Header Section Styling */
 #home {
     background: #2196F3;
-    /* Old browsers */
     background: -moz-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* FF3.6-15 */
     background: -webkit-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,
             #2196F3 37%,
             #006492 98%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2196F3', endColorstr='#006492', GradientType=0);
-    /* IE6-9 */
     background-repeat: no-repeat;
     color: #ffffff;
     height: 100%;
@@ -409,7 +396,6 @@ section {
     position: relative;
 }
 
-/* Navbar Styling */
 nav {
     display: flex;
     flex-flow: row;
@@ -432,7 +418,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Sticky Navbar */
 .sticky {
     position: fixed;
     left: 0;
@@ -469,7 +454,6 @@ nav {
     margin: -10px 10px;
 }
 
-/* Mobile Navbar Styling */
 #myNav {
     display: block;
 }
@@ -478,7 +462,6 @@ nav {
     position: absolute;
     right: 10%;
     display: none;
-    /* Hide Mobile Nav on Desktop or big devices */
     cursor: pointer;
     user-select: none;
 }
@@ -522,9 +505,6 @@ nav {
     color: #2196F3;
 }
 
-/* End: Mobile Menu Styling */
-
-/* Hero Section Styling */
 
 #hero {
     margin: 100px 0;
@@ -562,10 +542,8 @@ nav {
     float: right;
     z-index: 1;
     position: absolute;
-    /* right: 9.375rem; */
 }
 
-/* Custom Shape Divider */
 
 .shape-divider {
     margin-top: 100px;
@@ -596,59 +574,39 @@ nav {
 
 #scrollUp {
     display: none;
-    /* Hidden by default */
+    
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
     z-index: 99;
-    /* Make sure it does not overlap */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background: #2196F3;
-    /* Old browsers */
     background: -moz-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* FF3.6-15 */
     background: -webkit-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,
             #2196F3 37%,
             #006492 98%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2196F3', endColorstr='#006492', GradientType=0);
-    /* IE6-9 */
     background-repeat: no-repeat;
     color: #ffffff;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    /* Rounded corners */
     font-size: 18px;
-    /* Increase font size */
     box-shadow: 0 10px 30px rgba(54, 54, 54, 0.3);
 }
 
 #scrollUp:hover {
     background-color: #555;
-    /* Add a dark-grey background on hover */
     transform: scale(1.1);
     transition: 0.3s;
 }
-
-/* End: Header Section Styling */
-
-/* Features Section Styling */
 #features {
     height: 100%;
     padding-bottom: 200px;
@@ -663,9 +621,6 @@ nav {
     margin-top: 6.25rem;
 }
 
-/* End: Features Section Styling */
-
-/* Testimonial Section Styling */
 #testimonial {
     margin-top: 50px;
 }
@@ -746,26 +701,18 @@ nav {
     line-height: 1;
 }
 
-/* End: Testimonial Section Styling */
-
-/* How To Section Styling */
 #howto {
     background: #2196F3;
-    /* Old browsers */
     background: -moz-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* FF3.6-15 */
     background: -webkit-linear-gradient(top,
             #2196F3 37%,
             #006492 98%);
-    /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,
             #2196F3 37%,
             #006492 98%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2196F3', endColorstr='#006492', GradientType=0);
-    /* IE6-9 */
     background-repeat: no-repeat;
     color: #ffffff;
     height: 24.375rem;
@@ -796,8 +743,6 @@ nav {
 }
 
 .big_image {
-    /* position: absolute;
-    top: -66px; */
     max-width: 325px;
     margin-top: -125px;
 }
@@ -827,9 +772,6 @@ nav {
     margin: 20px 0;
 }
 
-/* End: How To Section Styling */
-
-/* Subscribe Section Styling */
 #subscribe {
     padding: 150px 50px;
     text-align: center;
@@ -854,7 +796,6 @@ nav {
     border-radius: 3.125rem;
     padding: 0 30px;
     padding-right: 210px;
-    /*   position: relative; */
     font-size: 18px;
 }
 
@@ -874,9 +815,6 @@ nav {
     color: #ffffff;
 }
 
-/* End: Subscribe Section Styling */
-
-/* Download The App Section Styling */
 #download {
     text-align: center;
     padding: 100px;
@@ -891,9 +829,6 @@ nav {
     filter: drop-shadow(0 10px 30px rgba(223, 27, 60, 0.3));
 }
 
-/* End: Download The App Section Styling */
-
-/* Footer Section Styling */
 #footer {
     border-top: 1px solid #e0e0e0;
     display: flex;
@@ -921,11 +856,6 @@ nav {
     color: #363636;
 }
 
-/* End: Footer Section Styling */
-
-/* End: Main CSS Rules */
-
-/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     body {
         font-size: 16px !important;
@@ -1127,7 +1057,6 @@ nav {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     body {
         font-size: 18px;
@@ -1315,7 +1244,6 @@ nav {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
         font-size: 50px;
@@ -1446,7 +1374,6 @@ nav {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     h1 {
         font-size: 50px;
@@ -1576,7 +1503,6 @@ nav {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .little-description {
         margin-top: 1.875rem;
